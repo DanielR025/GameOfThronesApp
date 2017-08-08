@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650657461F38C67400F0C94A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650657451F38C67400F0C94A /* WebView.swift */; };
+		65221D061F38B6F000797F23 /* DataRecource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65221D051F38B6F000797F23 /* DataRecource.swift */; };
 		659B7B231F365091001417A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B7B221F365091001417A1 /* AppDelegate.swift */; };
 		659B7B251F365091001417A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B7B241F365091001417A1 /* ViewController.swift */; };
 		659B7B281F365091001417A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B7B261F365091001417A1 /* Main.storyboard */; };
 		659B7B2A1F365091001417A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659B7B291F365091001417A1 /* Assets.xcassets */; };
 		659B7B2D1F365091001417A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B7B2B1F365091001417A1 /* LaunchScreen.storyboard */; };
+		659B7B371F3653FB001417A1 /* GOTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B7B361F3653FB001417A1 /* GOTCell.swift */; };
+		659B7B391F3654F9001417A1 /* Charakter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B7B381F3654F9001417A1 /* Charakter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650657451F38C67400F0C94A /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		65221D051F38B6F000797F23 /* DataRecource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRecource.swift; sourceTree = "<group>"; };
 		659B7B1F1F365091001417A1 /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659B7B221F365091001417A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659B7B241F365091001417A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		659B7B291F365091001417A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659B7B2C1F365091001417A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659B7B2E1F365091001417A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B7B361F3653FB001417A1 /* GOTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTCell.swift; sourceTree = "<group>"; };
+		659B7B381F3654F9001417A1 /* Charakter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charakter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650657471F38CEB600F0C94A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				659B7B241F365091001417A1 /* ViewController.swift */,
+				650657451F38C67400F0C94A /* WebView.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		659B7B161F365091001417A1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +71,33 @@
 		659B7B211F365091001417A1 /* GameOfThrones */ = {
 			isa = PBXGroup;
 			children = (
-				659B7B221F365091001417A1 /* AppDelegate.swift */,
-				659B7B241F365091001417A1 /* ViewController.swift */,
+				659B7B341F3653C8001417A1 /* Model */,
+				659B7B351F3653D1001417A1 /* View */,
+				650657471F38CEB600F0C94A /* Controller */,
 				659B7B261F365091001417A1 /* Main.storyboard */,
+				659B7B221F365091001417A1 /* AppDelegate.swift */,
 				659B7B291F365091001417A1 /* Assets.xcassets */,
 				659B7B2B1F365091001417A1 /* LaunchScreen.storyboard */,
 				659B7B2E1F365091001417A1 /* Info.plist */,
 			);
 			path = GameOfThrones;
+			sourceTree = "<group>";
+		};
+		659B7B341F3653C8001417A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				659B7B381F3654F9001417A1 /* Charakter.swift */,
+				65221D051F38B6F000797F23 /* DataRecource.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		659B7B351F3653D1001417A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				659B7B361F3653FB001417A1 /* GOTCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65221D061F38B6F000797F23 /* DataRecource.swift in Sources */,
 				659B7B251F365091001417A1 /* ViewController.swift in Sources */,
 				659B7B231F365091001417A1 /* AppDelegate.swift in Sources */,
+				650657461F38C67400F0C94A /* WebView.swift in Sources */,
+				659B7B371F3653FB001417A1 /* GOTCell.swift in Sources */,
+				659B7B391F3654F9001417A1 /* Charakter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +342,7 @@
 				659B7B331F365091001417A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
