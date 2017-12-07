@@ -34,11 +34,18 @@ class WebView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string: _url)
-        let myRequest = URLRequest(url: myURL!)
+        if let myURL = URL(string: _url) {
+        let myRequest = URLRequest(url: myURL)
         webView.load(myRequest)
+        }
     }
-
+    override func viewWillDisappear(_ animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if self.isMovingFromParentViewController{
+        
+        }
+    }
 
     
 }
